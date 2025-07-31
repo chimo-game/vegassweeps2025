@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Sweeps</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* Allows scrolling content */
+            background: #f0f0f0;
+            /* Fallback color */
+            font-family: Arial, sans-serif;
+            overflow-y: auto;
+            /* Enables vertical scrolling */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            position: fixed;
+            /* Makes header sticky */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* Dark blue background to match the image */
+            padding: 10px 0;
+            z-index: 1001;
+            /* Higher z-index for header */
+            box-sizing: border-box;
+        }
+
+        .header-inner {
+            width: 800px;
+            /* Matches background width */
+            margin: 0 auto;
+            /* Centers the content */
+            display: flex;
+            justify-content: space-between;
+            /* Two columns */
+            align-items: center;
+        }
+
+        .header-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-column h3 {
+            margin: 0 0 10px 0;
+            /* Space below text */
+            color: white;
+            /* Matches the image text color */
+            font-size: 16px;
+            text-shadow: 0px 3px 9px black;
+        }
+
+        .header-column a {
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .header-column img {
+            width: 200px;
+            /* Approximate width for each button, adjust as needed */
+            height: auto;
+            /* Maintains aspect ratio */
+            cursor: pointer;
+            transition: transform 0.2s;
+            /* Smooth hover effect */
+        }
+
+        .header-column img:hover {
+            transform: scale(1.1);
+            /* Slight zoom on hover */
+        }
+
+        .background {
+            width: 650px;
+            /* Fixed width */
+            height: auto;
+            /* Maintains aspect ratio */
+            display: block;
+            max-width: 100%;
+            /* Ensures it fits within viewport on smaller screens */
+            /* Space for sticky header */
+            /* Space for sticky buttons */
+        }
+
+        .buttons {
+            position: fixed;
+            /* Makes buttons sticky */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            /* Full viewport width */
+            /* Matches the blue bar color */
+
+            z-index: 1000;
+            /* Ensures buttons stay above content */
+            box-sizing: border-box;
+        }
+
+        .buttons-inner {
+            width: 650px;
+            /* Matches background width */
+            margin: 0 auto;
+            /* Centers the button layout */
+        }
+
+        .buttons-inner a {
+            text-decoration: none;
+        }
+
+        .buttons-inner img {
+            width: 100%;
+            /* Matches the container width (800px) */
+            height: auto;
+            /* Maintains aspect ratio */
+            cursor: pointer;
+            display: block;
+        }
+
+        @media (max-width: 800px) {
+
+            .header-inner,
+            .background,
+            .buttons-inner {
+                width: 100%;
+                /* Scales down proportionally on smaller screens */
+            }
+
+            .header,
+            .buttons {
+                padding: 0px 0;
+            }
+
+            .header {
+                margin-top: 90px;
+            }
+
+            .header-column img {
+                width: 160px;
+                /* Reduced size for mobile */
+            }
+
+            .buttons-inner img {
+                max-width: 100%;
+                /* Ensures it scales down */
+            }
+
+            .background {
+                margin-top: 0px;
+                /* Adjusted for smaller header */
+                margin-bottom: 0px;
+                /* Adjusted for smaller buttons */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-inner">
+                <div class="header-column">
+                    <h3>Click To Install APP</h3>
+                    <a href="http://vegassweeps777.download/" target="_blank">
+                        <img src="https://gamevault777.net/wp-content/uploads/2025/06/BTN_download.png" alt="Android">
+                    </a>
+                    <a href="http://vegassweeps777.download/" target="_blank">
+                        <img src="https://gamevault777.net/wp-content/uploads/2025/06/BTN_IOS_1.png" alt="IOS 1">
+                    </a>
+                </div>
+                <div class="header-column">
+                    <h3>Click To Play On Web</h3>
+                    <a href="https://vegassweepsonline.com/register/" target="_blank">
+                        <img src="https://gamevault777.net/wp-content/uploads/2025/06/BTN_play-now.png" alt="Play Now">
+                    </a>
+                    <a href="http://vegassweeps777.download/" target="_blank">
+                        <img src="https://gamevault777.net/wp-content/uploads/2025/06/BTN_IOS_2.png" alt="IOS 2">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="https://vegassweepsonline.com/wp-content/uploads/2025/07/vegassweepsonline_com_bg.webp"
+            alt="Game Vault Background" class="background">
+        <div class="buttons">
+            <div class="buttons-inner">
+                <a href="http://vegassweeps777.download/" target="_blank">
+                    <img src="https://vegassweeps.win/wp-content/uploads/2025/07/btn_downlaod.gif" alt="Buttons"
+                        usemap="#buttonmap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <map name="buttonmap">
+        <area shape="rect" coords="0,0,130,50" href="http://vegassweeps777.download/" alt="Website" target="_blank">
+        <area shape="rect" coords="150,0,280,50" href="http://vegassweeps777.download/" alt="Download" target="_blank">
+    </map>
+</body>
+
+</html>
